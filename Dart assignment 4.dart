@@ -58,7 +58,7 @@ Map<String, List<double>> cityCoordinates = {
 
 
 double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
-  const earthRadius = 6371; // in km
+  const earthRadius = 6371; 
 
   final dLat = _toRadians(lat2 - lat1);
   final dLon = _toRadians(lon2 - lon1);
@@ -114,7 +114,7 @@ void main() {
     int total = price * quantity;
    
     print(
-        "\n  $serialNumber. $name \tQuantity:$quantity    Price:$price       | Total:$total");
+        "\n  $serialNumber. $name \Quantity:$quantity    Price:$price       | Total:$total");
   }
   
 }
