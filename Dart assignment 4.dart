@@ -103,14 +103,13 @@ void main() {
     {'product_name': 'LED TV', 'price': 50000, 'quantity': 7},
   ];
 
-  product.sort((a, b) =>
-      (b['price'] * b['quantity'].compareTo(a['price'] * a['quantity'])));
+  product.sort((a, b) =>(b['price'] * b['quantity'].compareTo(a['price'] * a['quantity'])));
   print("\n\nSno  Items      Quantity       Price          Total Ammount");
-  for (int i = 0; i < product.length; i++) {
-    int serialNumber = i + 1;
-    String name = product[i]['product_name'];
-    int price = product[i]['price'];
-    int quantity = product[i]['quantity'];
+  for (int c = 0; c < product.length; c++) {
+    int serialNumber = c + 1;
+    String name = product[c]['product_name'];
+    int price = product[c]['price'];
+    int quantity = product[c]['quantity'];
     int total = price * quantity;
    
     print(
